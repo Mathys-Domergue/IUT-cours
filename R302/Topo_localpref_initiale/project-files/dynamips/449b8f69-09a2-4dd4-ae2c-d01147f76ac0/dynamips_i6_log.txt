@@ -1,0 +1,30 @@
+Mar 08 10:21:46.230 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Mar 08 10:21:46.230 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 51209.
+Mar 08 10:21:46.238 HYPERVISOR: exec_cmd: hypervisor version 
+Mar 08 10:21:46.239 HYPERVISOR: exec_cmd: hypervisor working_dir /home/lucky/Desktop/Topo_localpref_initiale/project-files/dynamips 
+Mar 08 10:21:46.239 GENERAL: working_dir=/home/lucky/Desktop/Topo_localpref_initiale/project-files/dynamips
+Mar 08 10:21:46.239 HYPERVISOR: exec_cmd: hypervisor working_dir /home/lucky/Desktop/Topo_localpref_initiale/project-files/dynamips/449b8f69-09a2-4dd4-ae2c-d01147f76ac0 
+Mar 08 10:21:46.239 GENERAL: working_dir=/home/lucky/Desktop/Topo_localpref_initiale/project-files/dynamips/449b8f69-09a2-4dd4-ae2c-d01147f76ac0
+Mar 08 10:21:46.239 HYPERVISOR: exec_cmd: vm create R12 6 c3600 
+Mar 08 10:21:46.239 VM: VM R12 created.
+Mar 08 10:21:46.239 HYPERVISOR: exec_cmd: vm set_con_tcp_port R12 5012 
+Mar 08 10:21:46.239 HYPERVISOR: exec_cmd: c3600 get_mac_addr R12 
+Mar 08 10:21:46.240 HYPERVISOR: exec_cmd: vm get_status R12 
+Mar 08 10:21:46.240 HYPERVISOR: exec_cmd: vm set_idle_pc R12 0x604f5184 
+Mar 08 10:21:46.240 HYPERVISOR: exec_cmd: vm set_ios R12 /home/lucky/GNS3/images/IOS/c3640-jk9s-mz.124-16.image 
+Mar 08 10:21:46.240 HYPERVISOR: exec_cmd: c3600 set_mac_addr R12 cc06.0ac8.0000 
+Mar 08 10:21:46.241 HYPERVISOR: exec_cmd: vm set_nvram R12 256 
+Mar 08 10:21:46.241 HYPERVISOR: exec_cmd: vm set_ram R12 192 
+Mar 08 10:21:46.241 HYPERVISOR: exec_cmd: vm get_status R12 
+Mar 08 10:21:46.241 HYPERVISOR: exec_cmd: vm slot_add_binding R12 0 0 NM-1FE-TX 
+Mar 08 10:21:46.241 HYPERVISOR: exec_cmd: vm get_status R12 
+Mar 08 10:21:46.241 HYPERVISOR: exec_cmd: vm slot_add_binding R12 1 0 NM-1FE-TX 
+Mar 08 10:21:47.703 HYPERVISOR: exec_cmd: nio create_udp udp-bd898587-5961-4d18-a659-dddd46ace0ef 10022 127.0.0.1 10023 
+Mar 08 10:21:47.909 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R12 1 0 udp-bd898587-5961-4d18-a659-dddd46ace0ef 
+Mar 08 10:21:47.909 HYPERVISOR: exec_cmd: vm get_status R12 
+Mar 08 10:21:47.975 HYPERVISOR: exec_cmd: nio create_udp udp-19a8ffd4-b6e0-41bb-85b5-cc43f7b12971 10026 127.0.0.1 10027 
+Mar 08 10:21:47.976 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R12 0 0 udp-19a8ffd4-b6e0-41bb-85b5-cc43f7b12971 
+Mar 08 10:21:47.977 HYPERVISOR: exec_cmd: vm get_status R12 
+Mar 08 10:25:25.688 HYPERVISOR: Stopped.
+Mar 08 10:25:25.699 VM: VM R12 destroyed.
+Mar 08 10:25:25.699 GENERAL: reset done.

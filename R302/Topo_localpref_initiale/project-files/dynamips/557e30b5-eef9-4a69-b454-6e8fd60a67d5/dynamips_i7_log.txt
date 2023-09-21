@@ -1,0 +1,25 @@
+Mar 08 10:21:46.263 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Mar 08 10:21:46.263 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 52723.
+Mar 08 10:21:46.273 HYPERVISOR: exec_cmd: hypervisor version 
+Mar 08 10:21:46.273 HYPERVISOR: exec_cmd: hypervisor working_dir /home/lucky/Desktop/Topo_localpref_initiale/project-files/dynamips 
+Mar 08 10:21:46.273 GENERAL: working_dir=/home/lucky/Desktop/Topo_localpref_initiale/project-files/dynamips
+Mar 08 10:21:46.273 HYPERVISOR: exec_cmd: hypervisor working_dir /home/lucky/Desktop/Topo_localpref_initiale/project-files/dynamips/557e30b5-eef9-4a69-b454-6e8fd60a67d5 
+Mar 08 10:21:46.273 GENERAL: working_dir=/home/lucky/Desktop/Topo_localpref_initiale/project-files/dynamips/557e30b5-eef9-4a69-b454-6e8fd60a67d5
+Mar 08 10:21:46.274 HYPERVISOR: exec_cmd: vm create R21 7 c3600 
+Mar 08 10:21:46.274 VM: VM R21 created.
+Mar 08 10:21:46.274 HYPERVISOR: exec_cmd: vm set_con_tcp_port R21 5013 
+Mar 08 10:21:46.274 HYPERVISOR: exec_cmd: c3600 get_mac_addr R21 
+Mar 08 10:21:46.274 HYPERVISOR: exec_cmd: vm get_status R21 
+Mar 08 10:21:46.274 HYPERVISOR: exec_cmd: vm set_idle_pc R21 0x604f5184 
+Mar 08 10:21:46.275 HYPERVISOR: exec_cmd: vm set_ios R21 /home/lucky/GNS3/images/IOS/c3640-jk9s-mz.124-16.image 
+Mar 08 10:21:46.275 HYPERVISOR: exec_cmd: c3600 set_mac_addr R21 cc07.0ad8.0000 
+Mar 08 10:21:46.275 HYPERVISOR: exec_cmd: vm set_nvram R21 256 
+Mar 08 10:21:46.275 HYPERVISOR: exec_cmd: vm set_ram R21 192 
+Mar 08 10:21:46.275 HYPERVISOR: exec_cmd: vm get_status R21 
+Mar 08 10:21:46.276 HYPERVISOR: exec_cmd: vm slot_add_binding R21 0 0 NM-1FE-TX 
+Mar 08 10:21:46.617 HYPERVISOR: exec_cmd: nio create_udp udp-b73cbb53-06e4-44d1-b704-fff70436795a 10004 127.0.0.1 10005 
+Mar 08 10:21:46.824 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R21 0 0 udp-b73cbb53-06e4-44d1-b704-fff70436795a 
+Mar 08 10:21:46.824 HYPERVISOR: exec_cmd: vm get_status R21 
+Mar 08 10:25:25.688 HYPERVISOR: Stopped.
+Mar 08 10:25:25.688 VM: VM R21 destroyed.
+Mar 08 10:25:25.688 GENERAL: reset done.

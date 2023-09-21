@@ -1,0 +1,27 @@
+* Définition des paramètres
+.param Z0 = 50              ; Impédance caractéristique
+.param L = 1e-9             ; Inductance de la ligne
+.param C = 10e-12           ; Capacité de la ligne
+.param LENGTH = 10e-3       ; Longueur de la ligne
+
+* Schéma du circuit
+V1 1 0 DC 1                 ; Source de tension
+TL1 1 2 0 Z0                ; Ligne de transmission
+C1 2 0 C                   ; Capacité de la ligne
+L1 2 3 L                   ; Inductance de la ligne
+R1 3 0 50                  ; Charge résistive
+
+* Définition des options de simulation
+.options TEMP = 27         ; Température ambiante
+.options TNOM = 27        ; Température de référence
+.options GMIN = 1e-9      ; Conductance minimale
+
+* Analyse transitoire
+.TRAN 0.1NS 100NS          ; Temps de simulation
+.PROBE                    ; Mesure de tous les nœuds
+
+* Analyse AC
+.AC DEC 10 1HZ 1GHZ        ; Analyse fréquentielle
+
+* Exécution de la simulation
+.END
