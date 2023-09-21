@@ -1,0 +1,12 @@
+$TTL 1d
+@     IN    SOA   ns1.sae401.bz. admin.sae401.bz. (
+                  2023061301  ; Serial
+                  1d          ; Refresh
+                  2h          ; Retry
+                  1w          ; Expire
+                  1d )        ; Minimum TTL
+;
+@     IN    NS    rt.sae401.bz.
+@     IN    A     10.205.5.2
+
+
