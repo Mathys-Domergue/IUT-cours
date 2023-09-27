@@ -1,0 +1,1 @@
+resolver anvoie des requetes au client
