@@ -1,0 +1,38 @@
+Oct 03 06:18:25.398 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Oct 03 06:18:25.398 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 43491.
+Oct 03 06:18:25.408 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 03 06:18:25.409 HYPERVISOR: exec_cmd: hypervisor working_dir /home/lucky/Desktop/IUT-cours/R302/TP/TP1_topo1_initiale/project-files/dynamips 
+Oct 03 06:18:25.409 GENERAL: working_dir=/home/lucky/Desktop/IUT-cours/R302/TP/TP1_topo1_initiale/project-files/dynamips
+Oct 03 06:18:25.410 HYPERVISOR: exec_cmd: hypervisor working_dir /home/lucky/Desktop/IUT-cours/R302/TP/TP1_topo1_initiale/project-files/dynamips/4b481e71-dd58-4e36-9986-196f07505e22 
+Oct 03 06:18:25.410 GENERAL: working_dir=/home/lucky/Desktop/IUT-cours/R302/TP/TP1_topo1_initiale/project-files/dynamips/4b481e71-dd58-4e36-9986-196f07505e22
+Oct 03 06:18:25.410 HYPERVISOR: exec_cmd: vm create R5 5 c3600 
+Oct 03 06:18:25.410 VM: VM R5 created.
+Oct 03 06:18:25.412 HYPERVISOR: exec_cmd: vm set_con_tcp_port R5 5005 
+Oct 03 06:18:25.412 HYPERVISOR: exec_cmd: c3600 get_mac_addr R5 
+Oct 03 06:18:25.414 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 03 06:18:25.414 HYPERVISOR: exec_cmd: vm set_idle_pc R5 0x604f5184 
+Oct 03 06:18:25.416 HYPERVISOR: exec_cmd: vm set_ios R5 /home/lucky/GNS3/images/IOS/c3640-jk9s-mz.124-16.image 
+Oct 03 06:18:25.417 HYPERVISOR: exec_cmd: c3600 set_mac_addr R5 cc05.11e9.0000 
+Oct 03 06:18:25.418 HYPERVISOR: exec_cmd: vm set_nvram R5 256 
+Oct 03 06:18:25.419 HYPERVISOR: exec_cmd: vm set_ram R5 192 
+Oct 03 06:18:25.420 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 03 06:18:25.421 HYPERVISOR: exec_cmd: vm slot_add_binding R5 0 0 NM-1FE-TX 
+Oct 03 06:18:26.752 HYPERVISOR: exec_cmd: nio create_udp udp-47447bfd-fd5c-437a-9e32-b87a871b5ccd 10028 127.0.0.1 10029 
+Oct 03 06:18:26.963 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 0 0 udp-47447bfd-fd5c-437a-9e32-b87a871b5ccd 
+Oct 03 06:18:26.964 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 03 07:28:54.955 HYPERVISOR: exec_cmd: vm set_ghost_status R5 2 
+Oct 03 07:28:54.956 HYPERVISOR: exec_cmd: vm set_ghost_file R5 /home/lucky/Desktop/IUT-cours/R302/TP/TP1_topo1_initiale/project-files/dynamips/c3640-jk9s-mz.124-16.image-192.ghost 
+Oct 03 07:28:54.957 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 03 07:28:54.957 HYPERVISOR: exec_cmd: vm set_config R5 configs/i5_startup-config.cfg 
+Oct 03 07:28:54.957 HYPERVISOR: exec_cmd: vm start R5 
+Oct 03 07:29:25.270 HYPERVISOR: exec_cmd: vm extract_config R5 
+Oct 03 07:52:37.868 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 03 07:52:37.879 HYPERVISOR: exec_cmd: vm stop R5 
+Oct 03 07:52:37.955 VM: VM R5 shutdown.
+Oct 03 07:52:37.955 HYPERVISOR: exec_cmd: vm extract_config R5 
+Oct 03 07:52:40.426 HYPERVISOR: exec_cmd: vm set_ghost_status R5 2 
+Oct 03 07:52:40.427 HYPERVISOR: exec_cmd: vm set_ghost_file R5 /home/lucky/Desktop/IUT-cours/R302/TP/TP1_topo1_initiale/project-files/dynamips/c3640-jk9s-mz.124-16.image-192.ghost 
+Oct 03 07:52:40.428 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 03 07:52:40.429 HYPERVISOR: exec_cmd: vm set_config R5 configs/i5_startup-config.cfg 
+Oct 03 07:52:40.430 HYPERVISOR: exec_cmd: vm start R5 
+Oct 03 10:09:12.178 HYPERVISOR: exec_cmd: vm extract_config R5 

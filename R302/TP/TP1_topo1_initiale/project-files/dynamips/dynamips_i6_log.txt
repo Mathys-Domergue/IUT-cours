@@ -1,0 +1,30 @@
+Oct 03 06:18:25.464 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Oct 03 06:18:25.464 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 35481.
+Oct 03 06:18:25.473 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 03 06:18:25.473 HYPERVISOR: exec_cmd: hypervisor working_dir /home/lucky/Desktop/IUT-cours/R302/TP/TP1_topo1_initiale/project-files/dynamips 
+Oct 03 06:18:25.473 GENERAL: working_dir=/home/lucky/Desktop/IUT-cours/R302/TP/TP1_topo1_initiale/project-files/dynamips
+Oct 03 06:18:25.473 HYPERVISOR: exec_cmd: hypervisor working_dir /home/lucky/Desktop/IUT-cours/R302/TP/TP1_topo1_initiale/project-files/dynamips/e3185f26-a9d6-4f3a-8deb-4d571d4493ee 
+Oct 03 06:18:25.473 GENERAL: working_dir=/home/lucky/Desktop/IUT-cours/R302/TP/TP1_topo1_initiale/project-files/dynamips/e3185f26-a9d6-4f3a-8deb-4d571d4493ee
+Oct 03 06:18:25.473 HYPERVISOR: exec_cmd: vm create R6 6 c3600 
+Oct 03 06:18:25.473 VM: VM R6 created.
+Oct 03 06:18:25.474 HYPERVISOR: exec_cmd: vm set_con_tcp_port R6 5006 
+Oct 03 06:18:25.474 HYPERVISOR: exec_cmd: c3600 get_mac_addr R6 
+Oct 03 06:18:25.474 HYPERVISOR: exec_cmd: vm get_status R6 
+Oct 03 06:18:25.474 HYPERVISOR: exec_cmd: vm set_idle_pc R6 0x604f5184 
+Oct 03 06:18:25.474 HYPERVISOR: exec_cmd: vm set_ios R6 /home/lucky/GNS3/images/IOS/c3640-jk9s-mz.124-16.image 
+Oct 03 06:18:25.475 HYPERVISOR: exec_cmd: c3600 set_mac_addr R6 cc06.11f9.0000 
+Oct 03 06:18:25.475 HYPERVISOR: exec_cmd: vm set_nvram R6 256 
+Oct 03 06:18:25.475 HYPERVISOR: exec_cmd: vm set_ram R6 192 
+Oct 03 06:18:25.475 HYPERVISOR: exec_cmd: vm get_status R6 
+Oct 03 06:18:25.475 HYPERVISOR: exec_cmd: vm slot_add_binding R6 0 0 NM-1FE-TX 
+Oct 03 06:18:27.052 HYPERVISOR: exec_cmd: nio create_udp udp-2f390641-f3c5-43f4-aa64-3dfea85093fa 10034 127.0.0.1 10035 
+Oct 03 06:18:27.262 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R6 0 0 udp-2f390641-f3c5-43f4-aa64-3dfea85093fa 
+Oct 03 06:18:27.263 HYPERVISOR: exec_cmd: vm get_status R6 
+Oct 03 07:28:54.994 HYPERVISOR: exec_cmd: vm set_ghost_status R6 2 
+Oct 03 07:28:54.995 HYPERVISOR: exec_cmd: vm set_ghost_file R6 /home/lucky/Desktop/IUT-cours/R302/TP/TP1_topo1_initiale/project-files/dynamips/c3640-jk9s-mz.124-16.image-192.ghost 
+Oct 03 07:28:54.995 HYPERVISOR: exec_cmd: vm get_status R6 
+Oct 03 07:28:54.996 HYPERVISOR: exec_cmd: vm set_config R6 configs/i6_startup-config.cfg 
+Oct 03 07:28:54.996 HYPERVISOR: exec_cmd: vm start R6 
+Oct 03 07:29:25.271 HYPERVISOR: exec_cmd: vm extract_config R6 
+Oct 03 09:37:26.743 HYPERVISOR: exec_cmd: vm extract_config R6 
+Oct 03 09:38:26.746 HYPERVISOR: exec_cmd: vm extract_config R6 
