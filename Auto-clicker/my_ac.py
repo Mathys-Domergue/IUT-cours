@@ -1,0 +1,1 @@
+#Réaliser un auto-clicker en python en utilisant python orienté object puis utilisé une interface soit en tkinter soit GTK

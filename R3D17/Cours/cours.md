@@ -11,3 +11,4 @@ On prend généralement trois machine physiques plutot que deux car perdre une m
 Hyper-viseur = kernel
 tenant = multi client
 
+Qemu = virtualisation de tout
