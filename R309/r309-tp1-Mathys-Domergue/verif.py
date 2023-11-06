@@ -29,7 +29,10 @@ def touche(key):
 		but1.configure(state=NORMAL)
 	else: 
 		but1.configure(state=DISABLED)
-		
+
+
+
+gui.resizable(False,False)		
 label = ttk.Label(gui,text="Veuillez entre votre Email :")
 label.pack(pady=5)
 
