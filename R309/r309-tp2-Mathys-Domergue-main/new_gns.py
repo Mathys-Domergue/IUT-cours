@@ -1,5 +1,4 @@
 from tkinter import *
-from tkinter import ttk
 from PIL import Image
 
 gui = Tk()
@@ -60,6 +59,7 @@ img1 = PhotoImage(file = '~/Desktop/IUT-cours/R309/r309-tp2-Mathys-Domergue-main
 img2 = PhotoImage(file = '~/Desktop/IUT-cours/R309/r309-tp2-Mathys-Domergue-main/img/switch.png')
 img3 = PhotoImage(file = '~/Desktop/IUT-cours/R309/r309-tp2-Mathys-Domergue-main/img/routeur.png')
 
+gui.resizable(False,False)
 gui.bind("<KeyPress>", keydown)
 gui.bind("<Key-BackSpace>", delete)
 gui.bind("<B1-Motion>",glisser)
