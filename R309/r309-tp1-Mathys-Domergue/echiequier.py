@@ -66,6 +66,7 @@ def pointeur(event):
 ##### Programme principal : ############
 global damier
 fen = Tk()
+fen.resizable(False,False)
 can = Canvas(fen, width =160, height =160, bg ='white')
 can.bind("<Button-1>", pointeur)
 can.pack(side =TOP, padx =5, pady =5)
