@@ -473,7 +473,7 @@
                 "symbol": ":/symbols/router.svg",
                 "template_id": "8eff9539-5121-4979-b0d3-0cb6d003d51e",
                 "width": 66,
-                "x": -327,
+                "x": -328,
                 "y": 51,
                 "z": 1
             },
@@ -865,8 +865,8 @@
                 "symbol": ":/symbols/router.svg",
                 "template_id": "8eff9539-5121-4979-b0d3-0cb6d003d51e",
                 "width": 66,
-                "x": -146,
-                "y": 127,
+                "x": -147,
+                "y": 125,
                 "z": 1
             }
         ]
@@ -874,5 +874,5 @@
     "type": "topology",
     "variables": null,
     "version": "2.2.43",
-    "zoom": 100
+    "zoom": 71
 }
