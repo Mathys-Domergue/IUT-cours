@@ -46,9 +46,13 @@ def clic(event):
     old[1]=event.y
 
 def glisser(event):
-    can.move(img1, event.x-old[0], event.y-old[1])
-    old[0]=event.x
-    old[1]=event.y
+    global x1,y1
+    step_x=event.x-x1 # Change in x value ( Horizontal)
+    step_y=event.y-y1 # Change in y value ( vertical )
+    #print(x1,y1)
+    c1.move(r1,step_x,step_y) # Move image to new position 
+    x1=event.x  # Set the new position as image x coordinate 
+    y1=event.y  # Set the new position as image y coordinate
 
 
 lg, ht = 600,540

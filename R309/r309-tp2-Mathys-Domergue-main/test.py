@@ -1,39 +1,24 @@
-from tkinter import *
-from PIL import Image
+import tkinter as tk
+my_w = tk.Tk()
+width,height=910,810 # set the variables 
+c_width,c_height=width-10,height-65 # canvas width height
+d=str(width)+"x"+str(height)
+my_w.geometry(d) 
+c1 = tk.Canvas(my_w, width=c_width, height=c_height,bg='lightgreen')
+c1.grid(row=0,column=0,columnspan=3,padx=5,pady=5)
 
-gui = Tk()
-gui.title("Votre plan réseau")
-gui.geometry("720x360")
-cnv = Canvas(gui, width=720, height=360)
-cnv.pack()
+my_path = tk.PhotoImage(file = "~/Desktop/IUT-cours/R309/r309-tp2-Mathys-Domergue-main/img/client.png") # Update your image path
+x1,y1=100,25 # Image position coordinate ( initial )
+r1 = c1.create_image(x1,y1,  image=my_path)
 
-img_cliq = ""
-def choix(val):
-	global img_cliq
-	if val == 1:
-		img_cliq = img1
+def my_callback(event):
+    global x1,y1
+    step_x=event.x-x1 # Change in x value ( Horizontal)
+    step_y=event.y-y1 # Change in y value ( vertical )
+    #print(x1,y1)
+    c1.move(r1,step_x,step_y) # Move image to new position 
+    x1=event.x  # Set the new position as image x coordinate 
+    y1=event.y  # Set the new position as image y coordinate
 
-	
-def keydown(e):
-	if e.char == "c":
-		print("Ordinateur")
-		cnv.create_image(e.x-10,e.y-20,image=img1)
-
-old=[None, None]
-
-def clic(event):
-    old[0]=event.x
-    old[1]=event.y
-
-def glisser(event):
-    cnv.move(img_cliq, event.x-old[0], event.y-old[1])
-    old[0]=event.x
-    old[1]=event.y
-
-img1 = PhotoImage(file = '~/Desktop/IUT-cours/R309/r309-tp2-Mathys-Domergue-main/img/client.png')
-
-gui.bind("<KeyPress>", keydown)
-cnv.bind("<B1-Motion>",glisser)
-cnv.bind("<Button-1>",clic)
-
-gui.mainloop()
+my_w.bind('<B1-Motion>',my_callback) # Mouse left button press and move
+my_w.mainloop()
