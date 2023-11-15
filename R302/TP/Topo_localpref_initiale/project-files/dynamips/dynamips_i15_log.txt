@@ -1,0 +1,27 @@
+Nov 14 15:34:35.284 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Nov 14 15:34:35.284 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 53169.
+Nov 14 15:34:35.292 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 14 15:34:35.293 HYPERVISOR: exec_cmd: hypervisor working_dir /home/lucky/Desktop/IUT-cours/R302/TP/Topo_localpref_initiale/project-files/dynamips 
+Nov 14 15:34:35.293 GENERAL: working_dir=/home/lucky/Desktop/IUT-cours/R302/TP/Topo_localpref_initiale/project-files/dynamips
+Nov 14 15:34:35.293 HYPERVISOR: exec_cmd: hypervisor working_dir /home/lucky/Desktop/IUT-cours/R302/TP/Topo_localpref_initiale/project-files/dynamips/36c4d581-0e2e-4c87-a50d-f17228293ec4 
+Nov 14 15:34:35.293 GENERAL: working_dir=/home/lucky/Desktop/IUT-cours/R302/TP/Topo_localpref_initiale/project-files/dynamips/36c4d581-0e2e-4c87-a50d-f17228293ec4
+Nov 14 15:34:35.293 HYPERVISOR: exec_cmd: vm create R11 8 c3600 
+Nov 14 15:34:35.293 VM: VM R11 created.
+Nov 14 15:34:35.294 HYPERVISOR: exec_cmd: vm set_con_tcp_port R11 5001 
+Nov 14 15:34:35.294 HYPERVISOR: exec_cmd: c3600 get_mac_addr R11 
+Nov 14 15:34:35.294 HYPERVISOR: exec_cmd: vm get_status R11 
+Nov 14 15:34:35.295 HYPERVISOR: exec_cmd: vm set_idle_pc R11 0x604f5184 
+Nov 14 15:34:35.295 HYPERVISOR: exec_cmd: vm set_ios R11 /home/lucky/GNS3/images/IOS/c3640-jk9s-mz.124-16.image 
+Nov 14 15:34:35.296 HYPERVISOR: exec_cmd: c3600 set_mac_addr R11 cc08.0f3e.0000 
+Nov 14 15:34:35.296 HYPERVISOR: exec_cmd: vm set_nvram R11 256 
+Nov 14 15:34:35.296 HYPERVISOR: exec_cmd: vm set_ram R11 192 
+Nov 14 15:34:35.296 HYPERVISOR: exec_cmd: vm get_status R11 
+Nov 14 15:34:35.297 HYPERVISOR: exec_cmd: vm slot_add_binding R11 0 0 NM-1FE-TX 
+Nov 14 15:34:35.297 HYPERVISOR: exec_cmd: vm get_status R11 
+Nov 14 15:34:35.297 HYPERVISOR: exec_cmd: vm slot_add_binding R11 1 0 NM-1FE-TX 
+Nov 14 15:34:37.310 HYPERVISOR: exec_cmd: nio create_udp udp-f74bd50f-1aa6-4e40-abc7-50f7dba2e0cc 10070 127.0.0.1 10071 
+Nov 14 15:34:37.523 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R11 1 0 udp-f74bd50f-1aa6-4e40-abc7-50f7dba2e0cc 
+Nov 14 15:34:37.525 HYPERVISOR: exec_cmd: vm get_status R11 
+Nov 14 15:34:37.641 HYPERVISOR: exec_cmd: nio create_udp udp-d04ee88d-8498-4a99-8f0a-4bf1909c66e1 10074 127.0.0.1 10075 
+Nov 14 15:34:37.643 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R11 0 0 udp-d04ee88d-8498-4a99-8f0a-4bf1909c66e1 
+Nov 14 15:34:37.644 HYPERVISOR: exec_cmd: vm get_status R11 

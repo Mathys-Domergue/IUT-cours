@@ -1,0 +1,27 @@
+Nov 14 15:34:35.121 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Nov 14 15:34:35.121 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 36971.
+Nov 14 15:34:35.129 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 14 15:34:35.130 HYPERVISOR: exec_cmd: hypervisor working_dir /home/lucky/Desktop/IUT-cours/R302/TP/Topo_localpref_initiale/project-files/dynamips 
+Nov 14 15:34:35.130 GENERAL: working_dir=/home/lucky/Desktop/IUT-cours/R302/TP/Topo_localpref_initiale/project-files/dynamips
+Nov 14 15:34:35.130 HYPERVISOR: exec_cmd: hypervisor working_dir /home/lucky/Desktop/IUT-cours/R302/TP/Topo_localpref_initiale/project-files/dynamips/61cd3f38-46a5-477e-aa97-2a6e43f02706 
+Nov 14 15:34:35.130 GENERAL: working_dir=/home/lucky/Desktop/IUT-cours/R302/TP/Topo_localpref_initiale/project-files/dynamips/61cd3f38-46a5-477e-aa97-2a6e43f02706
+Nov 14 15:34:35.130 HYPERVISOR: exec_cmd: vm create R4 4 c3600 
+Nov 14 15:34:35.130 VM: VM R4 created.
+Nov 14 15:34:35.131 HYPERVISOR: exec_cmd: vm set_con_tcp_port R4 5010 
+Nov 14 15:34:35.131 HYPERVISOR: exec_cmd: c3600 get_mac_addr R4 
+Nov 14 15:34:35.131 HYPERVISOR: exec_cmd: vm get_status R4 
+Nov 14 15:34:35.132 HYPERVISOR: exec_cmd: vm set_idle_pc R4 0x604f5184 
+Nov 14 15:34:35.132 HYPERVISOR: exec_cmd: vm set_ios R4 /home/lucky/GNS3/images/IOS/c3640-jk9s-mz.124-16.image 
+Nov 14 15:34:35.132 HYPERVISOR: exec_cmd: c3600 set_mac_addr R4 cc04.0aa4.0000 
+Nov 14 15:34:35.133 HYPERVISOR: exec_cmd: vm set_nvram R4 256 
+Nov 14 15:34:35.133 HYPERVISOR: exec_cmd: vm set_ram R4 192 
+Nov 14 15:34:35.133 HYPERVISOR: exec_cmd: vm get_status R4 
+Nov 14 15:34:35.134 HYPERVISOR: exec_cmd: vm slot_add_binding R4 0 0 NM-1FE-TX 
+Nov 14 15:34:35.134 HYPERVISOR: exec_cmd: vm get_status R4 
+Nov 14 15:34:35.134 HYPERVISOR: exec_cmd: vm slot_add_binding R4 1 0 NM-1FE-TX 
+Nov 14 15:34:36.397 HYPERVISOR: exec_cmd: nio create_udp udp-dca7723b-4d55-43ba-a7a4-0539a0bd1265 10058 127.0.0.1 10059 
+Nov 14 15:34:36.609 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 0 udp-dca7723b-4d55-43ba-a7a4-0539a0bd1265 
+Nov 14 15:34:36.610 HYPERVISOR: exec_cmd: vm get_status R4 
+Nov 14 15:34:37.658 HYPERVISOR: exec_cmd: nio create_udp udp-f9b1237d-2d9d-471e-b793-88e3a815f194 10076 127.0.0.1 10077 
+Nov 14 15:34:37.659 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 1 0 udp-f9b1237d-2d9d-471e-b793-88e3a815f194 
+Nov 14 15:34:37.660 HYPERVISOR: exec_cmd: vm get_status R4 

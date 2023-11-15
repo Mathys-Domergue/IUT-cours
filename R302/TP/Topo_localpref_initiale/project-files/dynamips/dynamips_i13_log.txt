@@ -1,0 +1,27 @@
+Nov 14 15:34:35.203 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Nov 14 15:34:35.203 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 58321.
+Nov 14 15:34:35.211 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 14 15:34:35.211 HYPERVISOR: exec_cmd: hypervisor working_dir /home/lucky/Desktop/IUT-cours/R302/TP/Topo_localpref_initiale/project-files/dynamips 
+Nov 14 15:34:35.211 GENERAL: working_dir=/home/lucky/Desktop/IUT-cours/R302/TP/Topo_localpref_initiale/project-files/dynamips
+Nov 14 15:34:35.211 HYPERVISOR: exec_cmd: hypervisor working_dir /home/lucky/Desktop/IUT-cours/R302/TP/Topo_localpref_initiale/project-files/dynamips/449b8f69-09a2-4dd4-ae2c-d01147f76ac0 
+Nov 14 15:34:35.211 GENERAL: working_dir=/home/lucky/Desktop/IUT-cours/R302/TP/Topo_localpref_initiale/project-files/dynamips/449b8f69-09a2-4dd4-ae2c-d01147f76ac0
+Nov 14 15:34:35.212 HYPERVISOR: exec_cmd: vm create R12 6 c3600 
+Nov 14 15:34:35.212 VM: VM R12 created.
+Nov 14 15:34:35.212 HYPERVISOR: exec_cmd: vm set_con_tcp_port R12 5012 
+Nov 14 15:34:35.212 HYPERVISOR: exec_cmd: c3600 get_mac_addr R12 
+Nov 14 15:34:35.213 HYPERVISOR: exec_cmd: vm get_status R12 
+Nov 14 15:34:35.213 HYPERVISOR: exec_cmd: vm set_idle_pc R12 0x604f5184 
+Nov 14 15:34:35.213 HYPERVISOR: exec_cmd: vm set_ios R12 /home/lucky/GNS3/images/IOS/c3640-jk9s-mz.124-16.image 
+Nov 14 15:34:35.214 HYPERVISOR: exec_cmd: c3600 set_mac_addr R12 cc06.0ac8.0000 
+Nov 14 15:34:35.214 HYPERVISOR: exec_cmd: vm set_nvram R12 256 
+Nov 14 15:34:35.214 HYPERVISOR: exec_cmd: vm set_ram R12 192 
+Nov 14 15:34:35.215 HYPERVISOR: exec_cmd: vm get_status R12 
+Nov 14 15:34:35.215 HYPERVISOR: exec_cmd: vm slot_add_binding R12 0 0 NM-1FE-TX 
+Nov 14 15:34:35.215 HYPERVISOR: exec_cmd: vm get_status R12 
+Nov 14 15:34:35.215 HYPERVISOR: exec_cmd: vm slot_add_binding R12 1 0 NM-1FE-TX 
+Nov 14 15:34:36.976 HYPERVISOR: exec_cmd: nio create_udp udp-e3b7e322-657f-440d-966d-bc7c383ea4b9 10064 127.0.0.1 10065 
+Nov 14 15:34:37.187 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R12 1 0 udp-e3b7e322-657f-440d-966d-bc7c383ea4b9 
+Nov 14 15:34:37.188 HYPERVISOR: exec_cmd: vm get_status R12 
+Nov 14 15:34:37.293 HYPERVISOR: exec_cmd: nio create_udp udp-fcbd04ac-d8ce-4c48-bfb5-a856d503e9f1 10068 127.0.0.1 10069 
+Nov 14 15:34:37.295 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R12 0 0 udp-fcbd04ac-d8ce-4c48-bfb5-a856d503e9f1 
+Nov 14 15:34:37.295 HYPERVISOR: exec_cmd: vm get_status R12 

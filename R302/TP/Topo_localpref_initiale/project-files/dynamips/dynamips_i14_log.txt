@@ -1,0 +1,22 @@
+Nov 14 15:34:35.243 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Nov 14 15:34:35.243 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 58807.
+Nov 14 15:34:35.250 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 14 15:34:35.251 HYPERVISOR: exec_cmd: hypervisor working_dir /home/lucky/Desktop/IUT-cours/R302/TP/Topo_localpref_initiale/project-files/dynamips 
+Nov 14 15:34:35.251 GENERAL: working_dir=/home/lucky/Desktop/IUT-cours/R302/TP/Topo_localpref_initiale/project-files/dynamips
+Nov 14 15:34:35.251 HYPERVISOR: exec_cmd: hypervisor working_dir /home/lucky/Desktop/IUT-cours/R302/TP/Topo_localpref_initiale/project-files/dynamips/557e30b5-eef9-4a69-b454-6e8fd60a67d5 
+Nov 14 15:34:35.251 GENERAL: working_dir=/home/lucky/Desktop/IUT-cours/R302/TP/Topo_localpref_initiale/project-files/dynamips/557e30b5-eef9-4a69-b454-6e8fd60a67d5
+Nov 14 15:34:35.251 HYPERVISOR: exec_cmd: vm create R21 7 c3600 
+Nov 14 15:34:35.251 VM: VM R21 created.
+Nov 14 15:34:35.252 HYPERVISOR: exec_cmd: vm set_con_tcp_port R21 5013 
+Nov 14 15:34:35.252 HYPERVISOR: exec_cmd: c3600 get_mac_addr R21 
+Nov 14 15:34:35.252 HYPERVISOR: exec_cmd: vm get_status R21 
+Nov 14 15:34:35.252 HYPERVISOR: exec_cmd: vm set_idle_pc R21 0x604f5184 
+Nov 14 15:34:35.253 HYPERVISOR: exec_cmd: vm set_ios R21 /home/lucky/GNS3/images/IOS/c3640-jk9s-mz.124-16.image 
+Nov 14 15:34:35.253 HYPERVISOR: exec_cmd: c3600 set_mac_addr R21 cc07.0ad8.0000 
+Nov 14 15:34:35.254 HYPERVISOR: exec_cmd: vm set_nvram R21 256 
+Nov 14 15:34:35.254 HYPERVISOR: exec_cmd: vm set_ram R21 192 
+Nov 14 15:34:35.254 HYPERVISOR: exec_cmd: vm get_status R21 
+Nov 14 15:34:35.254 HYPERVISOR: exec_cmd: vm slot_add_binding R21 0 0 NM-1FE-TX 
+Nov 14 15:34:35.667 HYPERVISOR: exec_cmd: nio create_udp udp-62315f32-9c88-46f6-a2e2-9631b6537f11 10046 127.0.0.1 10047 
+Nov 14 15:34:35.881 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R21 0 0 udp-62315f32-9c88-46f6-a2e2-9631b6537f11 
+Nov 14 15:34:35.882 HYPERVISOR: exec_cmd: vm get_status R21 
