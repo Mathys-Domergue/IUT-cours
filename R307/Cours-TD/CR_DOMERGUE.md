@@ -8,6 +8,9 @@
 
     ![schéma-réseau-access](img/schéma_réseau_d_acces.png)
 
+
+    L'autre nom du réseau d'accés est boule locale
+
 2) 
 
 
@@ -68,3 +71,22 @@
     > **Note**  
     > source : https://www.gersnumerique.fr/harmonisation-des-reseaux/architecture-et-terminologie-du-reseau.html
     >https://essonnenumerique.com/glossaire/blod-boucle-locale-optique-dediee/
+
+8) L'équipement qui permet de déservir plusieurs fibre est le coupleur.
+
+9) Dans les ZTD les opérateur ne sont pas obligés de passer par un PM 
+    Dans les zones ZMD le déploiement des fibre est souvent à l'initiatives des collectivité
+
+> **Note**  
+> source : https://fibre.guide/deploiement/zmd  
+> https://fibre.guide/deploiement/ztd
+
+
+10) Nombre d'abonnés d’un RNO 24000 clients.
+    La distance entre une NRO et SRO sur une ZMD, est choisie par les opérateurs.
+
+>**Note**  
+>source : http://www.lissieu.fr/IMG/pdf/architecture_deploiement_reseau_ftth_zmd.pdf
+
+11) 
+![sens-de-trans](img/schema_10.png)
