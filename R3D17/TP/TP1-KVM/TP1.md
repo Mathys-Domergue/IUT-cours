@@ -99,8 +99,7 @@ Le bridge utilisé par ma machine virtuelle est le bridge default.
 
 ![add-bridge](img/create-bridge.png)
 
-```Bash
-lucky@lucky:~$ brctl addif mybridge eth0 #Ajoute une interface au bridge
-lucky@lucky:~$ sudo ip link set up dev monbridge #Active le bridge
-sudo dhclient monbridge #Récupère un adresse sur le réseau de la salle
-```
+![add-bridge](img/bridge-conf.png)
+
+
+4) 
