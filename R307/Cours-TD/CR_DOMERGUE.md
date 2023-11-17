@@ -74,7 +74,7 @@
 
 8) L'équipement qui permet de déservir plusieurs fibre est le coupleur.
 
-9) Dans les ZTD les opérateur ne sont pas obligés de passer par un PM 
+9) Dans les ZTD les opérateur relient du NRO jusq'au PM qui se situe en bas de l'immeuble.  
     Dans les zones ZMD le déploiement des fibre est souvent à l'initiatives des collectivité
 
 > **Note**  
