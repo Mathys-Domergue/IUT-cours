@@ -90,3 +90,5 @@
 
 11) 
 ![sens-de-trans](img/schema_10.png)
+
+12) 
