@@ -14,9 +14,11 @@ print("Salaire :", salaire[:10])
 moy_a=sum(age)/np.size(age)
 
 moy_s=sum(salaire)/np.size(salaire)
+print("moyenne de x", moy_a)
+print("moyenne de y",moy_s)
 
 for i in range(10):
-    a1=sum(((age[i]-moy_a)*(salaire[i]-moy_s))/(age[i]-moy_a)**2)
+    a1=np.sum(((age[i]-moy_a)*(salaire[i]-moy_s))/(age[i]-moy_a)**2)
         
 a0= moy_s-a1*moy_a
 
