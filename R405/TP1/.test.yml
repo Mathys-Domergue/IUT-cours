@@ -1,0 +1,4 @@
+- name: Create group with all containers
+  group:
+    name: all-containers
+    state: present
