@@ -1,4 +1,8 @@
+---
 - name: Create group with all containers
-  group:
-    name: all-containers
-    state: present
+
+tasks:
+- name: Create group with all containers
+   group:
+     name: all-containers
+     state: present

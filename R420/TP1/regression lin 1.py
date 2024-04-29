@@ -14,9 +14,9 @@ for i in range(N):
     data_rnd[1] = np.append(data_rnd, rnd)
 # On les mélange aléatoirement
 rng=np.random.default_rng()   # fixer la graine pour tester votre programme avec les mêmes données
-rng.shuffle(data,axis=1)
-age=data[0]
-salaire=data[1]
+rng.shuffle(data_rnd,axis=1)
+age=data_rnd[0]
+salaire=data_rnd[1]
 
 # données d'entrainement (1ère moitié du dataset)
 age_tds=age[:int(N/2)]

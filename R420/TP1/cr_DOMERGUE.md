@@ -1,10 +1,10 @@
 ## Mathys DOMERGUE
 ## RT2 App
 
-# <center> TP1 R420
+## <center> TP1 R420
 
 
-## 1. Régression linéaire
+### 1. Régression linéaire
 
 
 
@@ -34,3 +34,14 @@ Resultat 4:
 
 <img src=img/re4.png>
 <img src=img/Figure_4.png>
+
+
+c) Voici les résultat lorsque l'on mets des valleurs aléatoires: 
+
+![graph](img/ran.png)
+![resl](img/res1-c.png)
+
+
+### 2 Régression polynomiale
+
+
