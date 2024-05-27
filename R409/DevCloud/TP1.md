@@ -361,5 +361,31 @@ docker network create -d macvlan \
   --ip-range=192.168.32.128/25 \
   --gateway=192.168.32.254 \
   --aux-address="my-router=192.168.32.129" \
-  -o parent=enw macnet32
+  -o parent=enx7cc2c61cac5a macnet32
 ```
+
+5) Voici la configuration de mon ipvlan:
+
+```sh
+docker network create -d ipvlan \
+   --subnet=192.168.1.0/24 \
+   --gateway=192.168.1.1 \
+   -o ipvlan_mode=l2 \
+   -o parent=enx7cc2c61cac5a db_net
+```
+6) IPVLAN: Réseau vrituelle qui permet de rattacher des adresses aux interface de manière automatique. 
+
+   MACVLAN: Réseau virtuelle qui permet de rattacher les adresses MAC des containers à une adresses IP. Utile lorsque l'on veut que nos containers apparaissent comme des machines physique.
+
+7) Les containers utilisent la chaine de résolution donné par le réseau.
+   Pour modifier le DNS lors du lancement du container, la commande est :
+
+```sh
+docker run --dns=8.8.8.8
+```
+
+### 6. Tips & Tricks
+
+#### 6.1 Connexion à distance au daemon Docker
+
+1) 
